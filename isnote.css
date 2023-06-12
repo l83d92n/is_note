@@ -284,6 +284,6 @@ body {
 }
 
 /* 折りたたみ内フォント変更 */
-.details summary {
+details summary {
     font-family: 'Yusei Magic';
 }
