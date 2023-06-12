@@ -283,7 +283,6 @@ body {
     border: solid 5px #f5f5f5;
 }
 
-/* 折りたたみ内フォント変更 */
-details summary {
+.clip-box-i details summary {
     font-family: 'Yusei Magic';
 }
