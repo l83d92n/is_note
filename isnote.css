@@ -249,7 +249,6 @@ body {
 
 /* クリップ i */
 .clip-box-i {
-    font-family: 'Yusei Magic';
     position: relative;
     max-width: 480px;
     margin: 1em auto;
@@ -257,6 +256,7 @@ body {
     border-radius: 3px;
     box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
     background-color: #f5f5f5;
+    font-family: 'Yusei Magic';
     color: #333333;
     border-radius: 3px;
     box-shadow: 4px 5px 0px 1px rgba(143, 23, 0, 0.45);
