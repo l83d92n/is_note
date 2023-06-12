@@ -4,14 +4,14 @@
 /* よもぎ YUSEi */
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Yusei+Magic&display=swap');
 
-
-/* 背景 */
-body {
     /* サイト全体のフォント指定 */
-  {
+* {
   font-family: 'Yomogi' ;
   }
 
+
+/* 背景 */
+body {
   background-image:
       repeating-linear-gradient(to bottom,
         transparent 25px,
@@ -39,7 +39,7 @@ body {
   }
 }
 
-{
+* {
   font-family: 'Yomogi' ;
   }
 
