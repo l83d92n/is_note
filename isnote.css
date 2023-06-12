@@ -45,7 +45,7 @@ body {
 
 
 /* 見出し付箋 s */
-sticky-head-s {
+.sticky-head-s {
     font-family: 'Yomogi' ;
 }
 .sticky-head-s {
@@ -71,7 +71,7 @@ sticky-head-s {
 
 
 /* 見出し付箋 i */
-sticky-head-i {
+.sticky-head-i {
     font-family: 'Yusei Magic';
 }
 .sticky-head-i {
