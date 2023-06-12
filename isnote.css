@@ -244,6 +244,11 @@ body {
     border: solid 5px #f5f5f5;
 }
 
+.clip-box-i details summary {
+    font-family: 'Yomogi';
+}
+
+
 /* クリップ i */
 .clip-box-i {
     font-family: 'Yusei Magic';
