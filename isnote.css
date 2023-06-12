@@ -104,7 +104,6 @@ body {
 }
 
 .tape-box-s span {
-    font-family: 'Yomogi' ;
     position: absolute;
     top: 50%;
     left: 20%;
@@ -126,6 +125,7 @@ body {
 /* テープボックス i */
 .tape-box-i {
     font-family: 'Yusei Magic';
+    display: inline-block;
     position: relative;
     max-width: 500px;
     margin: 1.5em auto;
@@ -208,6 +208,7 @@ body {
 /* クリップ s */
 .clip-box-s {
     font-family: 'Yomogi';
+    display: inline-block
     position: relative;
     max-width: 480px;
     margin: 1em auto;
@@ -222,13 +223,11 @@ body {
 
 .clip-box-s::before,
 .clip-box-s::after {
-    font-family: 'Yomogi';
     position: absolute;
     content: '';
 }
 
 .clip-box-s::before {
-    font-family: 'Yomogi';
     top: -15px;
     right: 10px;
     height: 50px;
@@ -240,7 +239,6 @@ body {
 }
 
 .clip-box-s::after {
-    font-family: 'Yomogi';
     top: 0;
     width: 10px;
     right: 20px;
@@ -249,6 +247,8 @@ body {
 
 /* クリップ i */
 .clip-box-i {
+    font-family: 'Yusei Magic';
+    display: inline-block
     position: relative;
     max-width: 480px;
     margin: 1em auto;
@@ -264,13 +264,11 @@ body {
 
 .clip-box-i::before,
 .clip-box-i::after {
-    font-family: 'Yusei Magic';
     position: absolute;
     content: '';
 }
 
 .clip-box-i::before {
-    font-family: 'Yusei Magic';
     top: -15px;
     right: 10px;
     height: 50px;
@@ -282,7 +280,6 @@ body {
 }
 
 .clip-box-i::after {
-    font-family: 'Yusei Magic';
     top: 0;
     width: 10px;
     right: 20px;
