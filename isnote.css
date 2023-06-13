@@ -324,7 +324,7 @@ body {
     font-family: 'M PLUS 1p' ;
     position: relative;
     z-index: 1;
-    font-size: 1em;
+    font-size: 0.8em;
     color:#dcdcdc;
     text-shadow: 0 0 20px;
     padding-left: 100%;    /* 右端から文字をスタートさせるため */
