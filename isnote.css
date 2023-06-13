@@ -299,38 +299,39 @@ body {
 
 /* ナウプレイング */
 .music {
-  font-family: 'DotGothic16' ;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width : 50em;      /* 枠の大きさ */
-  border: solid 10px; /* 枠線 */
-  border-radius: 30px;
-  background-color: #2f1825;
-  padding: 0px;        /* 枠線の内側の余白 */
-  overflow : hidden; /* 枠からはみ出た部分を非表示 */
+    font-family: 'DotGothic16' ;
+    position: relative;
+    margin: 1em auto;
+    width : 50em;      /* 枠の大きさ */
+    border: solid 10px; /* 枠線 */
+    border-radius: 30px;
+    background-color: #2f1825;
+    padding: 0px;        /* 枠線の内側の余白 */
+    overflow : hidden; /* 枠からはみ出た部分を非表示 */
 }
 
 .music span {
+    font-family: 'DotGothic16' ;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: .2em 0;
     background-color: #000B00;
-    font-size: 1.8em;
+    font-size: 0.8em;
     color: #fff;
 }
 
 .music p{
-  position: relative;
-  z-index: 1;
-  font-size: 2.8em;
-  color:#dcdcdc;
-  text-shadow: 0 0 20px;
-  padding-left: 100%;    /* 右端から文字をスタートさせるため */
-  white-space : nowrap; /* 改行が起こらないように対策 */
-  line-height : 0px;         /* 行間（高さ）を1文字分にする */
-  animation : scroll 8s steps(70) infinite; /* 下のアニメーションを10秒かけて行い、それをくりかえす */
+    font-family: 'DotGothic16' ;
+    position: relative;
+    z-index: 1;
+    font-size: 1.8em;
+    color:#dcdcdc;
+    text-shadow: 0 0 20px;
+    padding-left: 100%;    /* 右端から文字をスタートさせるため */
+    white-space : nowrap; /* 改行が起こらないように対策 */
+    line-height : 0px;         /* 行間（高さ）を1文字分にする */
+    animation : scroll 8s steps(70) infinite; /* 下のアニメーションを10秒かけて行い、それをくりかえす */
 }
 
 .dots{
