@@ -302,7 +302,7 @@ body {
     font-family: 'DotGothic16' ;
     position: relative;
     margin: 1em auto;
-    width : 50em;      /* 枠の大きさ */
+    max-width: 480px;      /* 枠の大きさ */
     border: solid 5px; /* 枠線 */
     border-radius: 30px;
     background-color: #2f1825;
