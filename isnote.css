@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 /* フォント */
-/* よもぎ YUSEi */
-@import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Yusei+Magic&display=swap');
+/* よもぎ・ZEN紅道・ドットゴシック16 */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Yomogi&family=Zen+Kurenaido&display=swap');
 
     /* サイト全体のフォント指定 */
 * {
@@ -44,7 +44,7 @@ body {
   }
 
 
-/* 見出し付箋 s */
+/* タイトル付箋 s */
 .sticky-head-s {
     font-family: 'Yomogi' ;
     display: inline-block;
@@ -68,9 +68,9 @@ body {
 }
 
 
-/* 見出し付箋 i */
+/* タイトル付箋 i */
 .sticky-head-i {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     display: inline-block;
     position: relative;
     padding: .6em 1.4em .6em 1em;
@@ -124,7 +124,7 @@ body {
 
 /* テープボックス i */
 .tape-box-i {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     position: relative;
     max-width: 500px;
     margin: 1.5em auto;
@@ -135,7 +135,7 @@ body {
 }
 
 .tape-box-i span {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     position: absolute;
     top: 50%;
     left: 20%;
@@ -151,12 +151,12 @@ body {
 }
 
 .tape-box-i p {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     margin: 0;
 }
 
 
-/* 付箋 s */
+/* コメント付箋 s */
 .fusen-s {
     font-family: 'Yomogi' ;
     display: inline-block;
@@ -180,9 +180,9 @@ body {
     filter: blur(4px);
 }
 
-/* 付箋 i */
+/* コメント付箋 i */
 .fusen-i {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     display: inline-block;
     position: relative;
     padding: .5em 1em;
@@ -205,7 +205,7 @@ body {
 }
 
 
-/* クリップ s */
+/* 折りたたみボックス用クリップ s */
 .clip-box-s {
     font-family: 'Yomogi';
     position: relative;
@@ -249,9 +249,9 @@ body {
 }
 
 
-/* クリップ i */
+/* 折りたたみボックス用クリップ i */
 .clip-box-i {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
     position: relative;
     max-width: 480px;
     margin: 1em auto;
@@ -288,10 +288,73 @@ body {
     border: solid 5px #f5f5f5;
 }
 
+/* 折りたたみフォント指定 */
 .clip-box-i details summary {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
 }
 
 .clip-box-i details[open] {
-    font-family: 'Yusei Magic';
+    font-family: 'Zen Kurenaido';
+}
+
+/* ナウプレイング */
+.music {
+  font-family: 'DotGothic16' ;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width : 50em;      /* 枠の大きさ */
+  border: solid 10px; /* 枠線 */
+  border-radius: 30px;
+  background-color: #2f1825;
+  padding: 0px;        /* 枠線の内側の余白 */
+  overflow : hidden; /* 枠からはみ出た部分を非表示 */
+}
+
+.music span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2em 0;
+    background-color: #000B00;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.music p{
+  position: relative;
+  z-index: 1;
+  font-size: 2.8em;
+  color:#dcdcdc;
+  text-shadow: 0 0 20px;
+  padding-left: 100%;    /* 右端から文字をスタートさせるため */
+  white-space : nowrap; /* 改行が起こらないように対策 */
+  line-height : 0px;         /* 行間（高さ）を1文字分にする */
+  animation : scroll 8s steps(70) infinite; /* 下のアニメーションを10秒かけて行い、それをくりかえす */
+}
+
+.dots{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      transparent 0 1px, 
+      rgba(0, 0, 0, 1) 1px
+    );
+    pointer-events: none;
+    background-size: 3px 3px;
+    content: '';
+}
+
+/* アニメーション（右から左に移動） */
+@keyframes scroll{
+  0% { 
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-200%)
+  }
 }
