@@ -330,7 +330,7 @@ body {
     padding-left: 100%;    /* 右端から文字をスタートさせるため */
     white-space : nowrap; /* 改行が起こらないように対策 */
     line-height : 0px;         /* 行間（高さ）を1文字分にする */
-    animation : scroll 8s steps(70) infinite; /* 下のアニメーションを10秒かけて行い、それをくりかえす */
+    animation : scroll 10s steps(70) infinite; /* 下のアニメーションを10秒かけて行い、それをくりかえす */
 }
 
 .dots{
